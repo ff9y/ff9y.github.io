@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>VGCA</title>
+<title>VgCA</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
 	<script type="text/javascript">
@@ -401,75 +401,52 @@ a.checkbox-deselect {
 
 	
 	<div id="bcontent">
-   <div  id="B1" onmouseout="myBtn()" >永续</div>
+   <div  id="B1" onmouseenter="myBtn()" >永续</div>
 
-   <div id="B2" onmouseout ="myBtn('B2')">暴击+1</div>
-   <div id="B3" onmouseout ="myBtn('B3')">暴击-1</div>
- <div id="B4" onmouseout ="myBtn('B4')">+100000000</div>
-   <div id="B5" onmouseout ="myBtn('B5')" >+50000</div>
-    <div id="B6" onmouseout ="myBtn('B6')" >-50000</div>
+   <div id="B2" onmouseenter ="myBtn('B2')">暴击+1</div>
+   <div id="B3" onmouseenter ="myBtn('B3')">暴击-1</div>
+ <div id="B4" onmouseenter ="myBtn('B4')">+100000000</div>
+   <div id="B5" onmouseenter ="myBtn('B5')" >+50000</div>
+    <div id="B6" onmouseenter ="myBtn('B6')" >-50000</div>
 	    
 		 <div id="B7">Reset</div>
    </div>
    <div id="bcontent" >
-	  <div id="B8" style="background-color:#9af93e"  onmouseout ="myBtn('B8')" >+1000</div>
-	  <div id="B9" style="background-color:#2585a6"  onmouseout ="myBtn('B9')" >-1000</div>
-	  <div id="B10" style="background-color:#f61acf"  onmouseout ="myBtn('B10')" >+5000</div>
-      <div id="B11" style="background-color:#f05b72"  onmouseout ="myBtn('B11')" >-5000</div>
-      <div id="B12" style="background-color:#3ef9bd" onmouseout ="myBtn('B12')">+10000</div>
-	  <div id="B13" style="background-color:#5ce4fd"  onmouseout ="myBtn('B13')" >-10000</div>
+	  <div id="B8" style="background-color:#9af93e"  onmouseenter ="myBtn('B8')" >+1000</div>
+	  <div id="B9" style="background-color:#2585a6"  onmouseenter ="myBtn('B9')" >-1000</div>
+	  <div id="B10" style="background-color:#f61acf"  onmouseenter ="myBtn('B10')" >+5000</div>
+      <div id="B11" style="background-color:#f05b72"  onmouseenter ="myBtn('B11')" >-5000</div>
+      <div id="B12" style="background-color:#3ef9bd" onmouseenter ="myBtn('B12')">+10000</div>
+	  <div id="B13" style="background-color:#5ce4fd"  onmouseenter ="myBtn('B13')" >-10000</div>
 	  <div id="B15" style="background-color:#faa755" >重置</div>
    </div>
-   
-     <div id="bcontent">
-        <input type="button" id="btn1" value="+">
-        <input type="text" id="num" value="">
-        <input type="button" id="btn2" value="-">
-    </div>
-<script>
-
-
- var sum = 0;
-
-    document.getElementById("btn1").onclick = function () {
-
-        sum += parseFloat(document.getElementById("R1").innerHTML);
-
-        document.getElementById("num").value = sum;
-
-    }
-
-    document.getElementById("btn2").onclick = function () {
-
-        sum -= 1000;
-
-        document.getElementById("num").value = sum
-    }
 
 </script>
 
 </script>
 <div id="content" style="clear: both;">
-   <div  id="R1" onmouseout ="myBtn('R1')" >10</div>
+   <div  id="R1" onmouseenter ="myBtn('R1')" >0</div>
 
-   <div id="R2" onmouseout="myBtn('R2')">10</div>
+   <div id="R2" onmouseenter="myBtn('R2')">0</div>
 
-   <div id="R3" onmouseout="myBtn('R3')">0</div>
-   <div id="R4" onmouseout="myBtn('R4')" >0</div>
+   <div id="R3" onmouseenter="myBtn('R3')">0</div>
+   <div id="R4" onmouseenter="myBtn('R4')" >0</div>
 
-   <div id="R5" onmouseout="myBtn('R5')">0</div>
+   <div id="R5" onmouseenter="myBtn('R5')">0</div>
 
-   <div id="R6" onmouseout="myBtn('R6')">0</div>
+   <div id="R6" onmouseenter="myBtn('R6')">0</div>
 <script type="text/javascript">
 	var last;
 	var cnum='0';
-     function myBtn(R){ 
-		cnum=cnum+1;  
-		if(cnum<2){
+     function myBtn(R){   
+		if(cnum<=1){
+			cnum=2;
 			last=R;
 			return;
+		}else{
+		 cnum=1;
 		}
-		cnum=0;
+		
         document.getElementById(last).innerHTML = parseFloat(document.getElementById(last).innerHTML)+parseFloat(document.getElementById(R).innerHTML);
     }
 	
