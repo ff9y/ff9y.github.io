@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>vgca</title>
+<title>VGCA</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
 	<script type="text/javascript">
@@ -403,56 +403,76 @@ a.checkbox-deselect {
 	<div id="bcontent">
    <div  id="B1" onmouseout="myBtn()" >永续</div>
 
-   <div id="B2">暴击+1</div>
-   <div id="B2">暴击-1</div>
- <div id="B6">+1亿</div>
-   <div id="B4" >+50000</div>
-    <div id="B6">-50000</div>
+   <div id="B2" onmouseout ="myBtn('B2')">暴击+1</div>
+   <div id="B3" onmouseout ="myBtn('B3')">暴击-1</div>
+ <div id="B4" onmouseout ="myBtn('B4')">+100000000</div>
+   <div id="B5" onmouseout ="myBtn('B5')" >+50000</div>
+    <div id="B6" onmouseout ="myBtn('B6')" >-50000</div>
 	    
 		 <div id="B7">Reset</div>
    </div>
    <div id="bcontent" >
-	  <div id="B8">+1000</div>
-	  <div id="B9">-1000</div>
-	  <div id="B10">+5000</div>
-      <div id="B11">-5000</div>
-      <div id="B12">+10000</div>
-	  <div id="B13">-10000</div>
-	  <div id="B15">重置</div>
+	  <div id="B8" style="background-color:#9af93e"  onmouseout ="myBtn('B8')" >+1000</div>
+	  <div id="B9" style="background-color:#2585a6"  onmouseout ="myBtn('B9')" >-1000</div>
+	  <div id="B10" style="background-color:#f61acf"  onmouseout ="myBtn('B10')" >+5000</div>
+      <div id="B11" style="background-color:#f05b72"  onmouseout ="myBtn('B11')" >-5000</div>
+      <div id="B12" style="background-color:#3ef9bd" onmouseout ="myBtn('B12')">+10000</div>
+	  <div id="B13" style="background-color:#5ce4fd"  onmouseout ="myBtn('B13')" >-10000</div>
+	  <div id="B15" style="background-color:#faa755" >重置</div>
    </div>
    
-   
-   
+     <div id="bcontent">
+        <input type="button" id="btn1" value="+">
+        <input type="text" id="num" value="">
+        <input type="button" id="btn2" value="-">
+    </div>
+<script>
+
+
+ var sum = 0;
+
+    document.getElementById("btn1").onclick = function () {
+
+        sum += parseFloat(document.getElementById("R1").innerHTML);
+
+        document.getElementById("num").value = sum;
+
+    }
+
+    document.getElementById("btn2").onclick = function () {
+
+        sum -= 1000;
+
+        document.getElementById("num").value = sum
+    }
+
+</script>
+
+</script>
 <div id="content" style="clear: both;">
-   <div  id="R1" onmouseout ="myBtn()" >10000</div>
+   <div  id="R1" onmouseout ="myBtn('R1')" >10</div>
 
-   <div id="R2" onmouseout="myBtn2()">20000</div>
+   <div id="R2" onmouseout="myBtn('R2')">10</div>
 
-   <div id="R3" onmouseout="myBtn3()">30000</div>
-   <div id="R4" onmouseout="myBtn4()" >40000</div>
+   <div id="R3" onmouseout="myBtn('R3')">0</div>
+   <div id="R4" onmouseout="myBtn('R4')" >0</div>
 
-   <div id="R5" onmouseout="myBtn5()">50000</div>
+   <div id="R5" onmouseout="myBtn('R5')">0</div>
 
-   <div id="R6" onmouseout="myBtn6()">60000</div>
+   <div id="R6" onmouseout="myBtn('R6')">0</div>
 <script type="text/javascript">
- function myBtn(){
-			document.getElementById("R1").innerHTML="23000";
-        }
-		 function myBtn2(){
-			document.getElementById("R2").innerHTML="23000";
-        }
-		 function myBtn3(){
-			document.getElementById("R3").innerHTML="23000";
-        }
-		 function myBtn4(){
-			document.getElementById("R4").innerHTML="23000";
-        }
-		 function myBtn5(){
-			document.getElementById("R5").innerHTML="23000";
-        }
-		 function myBtn6(){
-			document.getElementById("R6").innerHTML="23000";
-        }
+	var last;
+	var cnum='0';
+     function myBtn(R){ 
+		cnum=cnum+1;  
+		if(cnum<2){
+			last=R;
+			return;
+		}
+		cnum=0;
+        document.getElementById(last).innerHTML = parseFloat(document.getElementById(last).innerHTML)+parseFloat(document.getElementById(R).innerHTML);
+    }
+	
 </script>
 
 
