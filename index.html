@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jquery图形多选复选框 - 站长素材</title>
+<title>vgca</title>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
 	<script type="text/javascript">
@@ -243,7 +243,7 @@ a.checkbox-deselect {
 
        top:200px;
 
-       left: 100px;
+       left: 300px;
 
    }
 
@@ -253,7 +253,7 @@ a.checkbox-deselect {
 
        top:200px;
 
-       left:200px;
+       left:600px;
 
    }
 
@@ -262,9 +262,136 @@ a.checkbox-deselect {
        position: absolute;
 
    }
+   
+   
+   
+   
+   
+   #bcontent{
+
+      width: 1000px;
+
+       height:100px;
+
+       margin: 0 auto;
+
+
+       position: relative;
+
+   }
+
+   #bcontent div{
+
+       width: 150px;
+
+       height: 100px;
+
+       float: left;
+
+       line-height: 100px;
+
+       text-align: center;
+
+       font-size:10px;
+
+       font-weight: 900;
+
+       color: #fff;
+
+       cursor: pointer;
+
+       position: absolute;
+
+   }
+
+   #bcontent div:nth-child(1){
+
+       background-color: #f05b72;
+
+       top:0;
+
+       left: 0;
+
+   }
+
+   #bcontent div:nth-child(2){
+
+       background-color: #faa755;
+
+       top:0;
+
+       left:130px;
+
+   }
+
+   #bcontent div:nth-child(3){
+
+       background-color: #2585a6;
+
+       top:0;
+
+       left: 260px;
+
+   }
+
+   #bcontent div:nth-child(4){
+
+       background:#5ce4fd;
+
+       top:0px;
+
+       left: 390px;
+
+   }
+
+   #bcontent div:nth-child(5){
+
+       background:#f61acf;
+
+      top:0px;
+
+       left: 520px;
+
+   }
+
+   #bcontent div:nth-child(6){
+
+       background:#3ef9bd;
+
+       top:0px;
+
+       left: 650px;
+
+   }
+
+   #bcontent div:nth-child(7){
+
+       background:#9af93e;
+
+       top:0px;
+
+       left: 780px;
+
+   }
+   
+   
+   #bcontent div:nth-child(8){
+
+       background:#9af93e;
+
+       top:0px;
+
+       left: 910px;
+
+   }
+   
+    #bcontent .draging{
+
+       position: absolute;
+
+   }
 
 </style>
-	
    
 
 </head>
@@ -272,130 +399,65 @@ a.checkbox-deselect {
 <body>
 
 
-	<form action="">
-		<fieldset>
-			<ul class="checklist">
-				<li>
-					<input name="jqdemo" value="value1" type="checkbox" id="choice_a"/>
-					<label for="choice_a">永续</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					
-					<input name="jqdemo" value="value1" type="checkbox" id="choice_a"/>
-					<label for="choice_a">暴击+1</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value2" type="checkbox" id="choice_b"/>
-					<label for="choice_b">暴击-1</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value3" type="checkbox" id="choice_c" checked="checked"/>
-					<label for="choice_c">+1000</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value4" type="checkbox" id="choice_d"/>
-					<label for="choice_d">-1000</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value5" type="checkbox" id="choice_e"/>
-					<label for="choice_d">+5000</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value6" type="checkbox" id="choice_f"/>
-					<label for="choice_d">-5000</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				
-				</li>
-				
-			</ul>
-			
-			<div style="clear: both;">
-			<ul class="checklist">
-			<li>
-					<input name="jqdemo" value="value7" type="checkbox" id="choice_g"/>
-					<label for="choice_d">+10000</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value8" type="checkbox" id="choice_h"/>
-					<label for="choice_d">-10000</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value9" type="checkbox" id="choice_i"/>
-					<label for="choice_d">+50000</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value10" type="checkbox" id="choice_j"/>
-					<label for="choice_d">+1E</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value11" type="checkbox" id="choice_k"/>
-					<label for="choice_d">Boost</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				<li>
-					<input name="jqdemo" value="value4" type="checkbox" id="choice_d"/>
-					<label for="choice_d">恢复</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				<li>
-					<input name="jqdemo" value="value4" type="checkbox" id="choice_d"/>
-					<label for="choice_d">重置</label>
-					<a class="checkbox-select" href="#">Select</a>
-					<a class="checkbox-deselect" href="#">Cancel</a>
-				</li>
-				
-			</ul>
-			</div>
-		
-	<button type="button" onmouseup="myBtn()">试一试</button>
 	
-			<div id="content" style="clear: both;">
-   <div  id="R1" onmouseout="myBtn()" >10000</div>
+	<div id="bcontent">
+   <div  id="B1" onmouseout="myBtn()" >永续</div>
 
-   <div id="R2">20000</div>
+   <div id="B2">暴击+1</div>
+   <div id="B2">暴击-1</div>
+ <div id="B6">+1亿</div>
+   <div id="B4" >+50000</div>
+    <div id="B6">-50000</div>
+	    
+		 <div id="B7">Reset</div>
+   </div>
+   <div id="bcontent" >
+	  <div id="B8">+1000</div>
+	  <div id="B9">-1000</div>
+	  <div id="B10">+5000</div>
+      <div id="B11">-5000</div>
+      <div id="B12">+10000</div>
+	  <div id="B13">-10000</div>
+	  <div id="B15">重置</div>
+   </div>
+   
+   
+   
+<div id="content" style="clear: both;">
+   <div  id="R1" onmouseout ="myBtn()" >10000</div>
 
-   <div id="R3" >30000</div>
-   <div id="R4" >40000</div>
+   <div id="R2" onmouseout="myBtn2()">20000</div>
 
-   <div id="R5">50000</div>
+   <div id="R3" onmouseout="myBtn3()">30000</div>
+   <div id="R4" onmouseout="myBtn4()" >40000</div>
 
-   <div id="R6">60000</div>
+   <div id="R5" onmouseout="myBtn5()">50000</div>
+
+   <div id="R6" onmouseout="myBtn6()">60000</div>
 <script type="text/javascript">
  function myBtn(){
-            alert(document.getElementById("R1").innerHTML);
 			document.getElementById("R1").innerHTML="23000";
+        }
+		 function myBtn2(){
+			document.getElementById("R2").innerHTML="23000";
+        }
+		 function myBtn3(){
+			document.getElementById("R3").innerHTML="23000";
+        }
+		 function myBtn4(){
+			document.getElementById("R4").innerHTML="23000";
+        }
+		 function myBtn5(){
+			document.getElementById("R5").innerHTML="23000";
+        }
+		 function myBtn6(){
+			document.getElementById("R6").innerHTML="23000";
         }
 </script>
 
 
 
 </div>
-			
-		</fieldset>
-	</form>
 </body>
 </html>
 <script type="text/javascript">
