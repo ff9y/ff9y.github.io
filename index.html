@@ -327,7 +327,7 @@ a.checkbox-deselect {
        cursor: pointer;
 
        position: absolute;
-
+width: 100px;height: 100px;background: red;-moz-border-radius: 50px;-webkit-border-radius: 50px;border-radius: 50px;
    }
 
    #bcontent div:nth-child(1){
@@ -437,7 +437,7 @@ a.checkbox-deselect {
    <div id="B5" onmouseenter ="myBtn('B5')" >+50000</div>
     <div id="B6" onmouseenter ="myBtn('B6')" >-50000</div>
 	    
-		 <div id="B7" onmouseenter ="myBtn7()" >恢复</div>
+		 <div id="B7" onmouseenter ="myBtn7()" >力量还原</div>
    </div>
    <div id="bcontent" >
 	  <div id="B8" style="background-color:#9af93e"  onmouseenter ="myBtn('B8')" >+1000</div>
@@ -523,7 +523,7 @@ a.checkbox-deselect {
 	function myBtn1(){
 	 if(yx==true){
 	    yx=false;
-	 }else if(yx==false){
+	 }else {
 	   yx=true;
 	  }
 	  alert("记忆："+yx);
