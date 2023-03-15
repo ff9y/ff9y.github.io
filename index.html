@@ -170,11 +170,10 @@ a.checkbox-deselect {
    #content div:nth-child(1){
 
        background-color: #f05b72;
-
        top:0;
-
        left: 0;
-
+	   height: 50px;
+	   line-height: 50px;
    }
 
    #content div:nth-child(2){
@@ -184,6 +183,8 @@ a.checkbox-deselect {
        top:0;
 
        left:300px;
+	   height: 50px;
+	   line-height: 50px;
 
    }
 
@@ -194,6 +195,8 @@ a.checkbox-deselect {
        top:0;
 
        left: 600px;
+	   height: 50px;
+	   line-height: 50px;
 
    }
 
@@ -201,7 +204,7 @@ a.checkbox-deselect {
 
        background:#5ce4fd;
 
-       top:100px;
+       top:50px;
 
        left: 300;
 
@@ -211,7 +214,7 @@ a.checkbox-deselect {
 
        background:#f61acf;
 
-       top:100px;
+       top:50px;
 
        left: 300px;
 
@@ -221,7 +224,7 @@ a.checkbox-deselect {
 
        background:#3ef9bd;
 
-       top:100px;
+       top:50px;
 
        left: 600px;
 
@@ -231,7 +234,7 @@ a.checkbox-deselect {
 
        background:#9af93e;
 
-       top:200px;
+       top:150px;
 
        left: 0;
 
@@ -241,20 +244,43 @@ a.checkbox-deselect {
 
        background:#eef93e;
 
-       top:200px;
+       top:150px;
 
        left: 300px;
 
    }
 
    #content div:nth-child(9){
-
        background:#f9843e;
-
-       top:200px;
-
+       top:150px;
        left:600px;
 
+   }
+   
+   #content div:nth-child(10){
+
+      background-color: #f05b72;
+      top:250px;
+      left:0;
+	  height: 50px;
+	  line-height: 50px;
+   }
+   
+   #content div:nth-child(11){
+       background-color: #faa755;
+       top:250px;
+       left:300px;
+	   height: 50px;
+	   line-height: 50px;
+   }
+   
+   #content div:nth-child(12){
+
+      background-color: #2585a6;
+      top:250px;
+      left:600px;
+	  height: 50px;
+	  line-height: 50px;
    }
 
    #content .draging{
@@ -271,7 +297,7 @@ a.checkbox-deselect {
 
       width: 1000px;
 
-       height:100px;
+       height:60px;
 
        margin: 0 auto;
 
@@ -284,11 +310,11 @@ a.checkbox-deselect {
 
        width: 150px;
 
-       height: 100px;
+       height: 60px;
 
        float: left;
 
-       line-height: 100px;
+       line-height: 60px;
 
        text-align: center;
 
@@ -385,6 +411,8 @@ a.checkbox-deselect {
 
    }
    
+    
+   
     #bcontent .draging{
 
        position: absolute;
@@ -401,15 +429,15 @@ a.checkbox-deselect {
 
 	
 	<div id="bcontent">
-   <div  id="B1" onmouseenter="myBtn()" >永续</div>
+   <div  id="B1" onmouseenter="myBtn1()" >力量记忆</div>
 
-   <div id="B2" onmouseenter ="myBtn('B2')">暴击+1</div>
-   <div id="B3" onmouseenter ="myBtn('B3')">暴击-1</div>
+   <div id="B2" onmouseenter ="myBtn2('B2')">暴击+1</div>
+   <div id="B3" onmouseenter ="myBtn3()">暴击重置</div>
  <div id="B4" onmouseenter ="myBtn('B4')">+100000000</div>
    <div id="B5" onmouseenter ="myBtn('B5')" >+50000</div>
     <div id="B6" onmouseenter ="myBtn('B6')" >-50000</div>
 	    
-		 <div id="B7">Reset</div>
+		 <div id="B7" onmouseenter ="myBtn7()" >恢复</div>
    </div>
    <div id="bcontent" >
 	  <div id="B8" style="background-color:#9af93e"  onmouseenter ="myBtn('B8')" >+1000</div>
@@ -418,27 +446,36 @@ a.checkbox-deselect {
       <div id="B11" style="background-color:#f05b72"  onmouseenter ="myBtn('B11')" >-5000</div>
       <div id="B12" style="background-color:#3ef9bd" onmouseenter ="myBtn('B12')">+10000</div>
 	  <div id="B13" style="background-color:#5ce4fd"  onmouseenter ="myBtn('B13')" >-10000</div>
-	  <div id="B15" style="background-color:#faa755" >重置</div>
+	  <div id="B15" style="background-color:#faa755"  onmouseenter ="myBtn15()">重置</div>
    </div>
 
 </script>
 
 </script>
 <div id="content" style="clear: both;">
-   <div  id="R1" onmouseenter ="myBtn('R1')" >0</div>
+	<div  id="C1" onmouseenter ="myBtn('C1');" >✶</div>
+	<div  id="C2" onmouseenter ="myBtn('C2');" >✶</div>
+	<div  id="C3" onmouseenter ="myBtn('C3');" >✶</div>
+   <div  id="R1" onmouseenter ="myBtn('R1');" >0</div>
 
    <div id="R2" onmouseenter="myBtn('R2')">0</div>
 
    <div id="R3" onmouseenter="myBtn('R3')">0</div>
+  
    <div id="R4" onmouseenter="myBtn('R4')" >0</div>
 
    <div id="R5" onmouseenter="myBtn('R5')">0</div>
 
    <div id="R6" onmouseenter="myBtn('R6')">0</div>
+ <div  id="C4" onmouseenter ="myBtn('C4');" >✶</div>
+	<div  id="C5" onmouseenter ="myBtn('C5');" >✶</div>
+	<div  id="C6" onmouseenter ="myBtn('C6');" >✶</div>
 <script type="text/javascript">
-	var last;
-	var cnum='0';
-     function myBtn(R){   
+	var last="B";
+	var yx=false;var cnum=0;
+	var c1=0;var c2=0;var c3=0;
+	var R1=0;var R2=0;var R3=0;var R4=0;var R5=0;var R6=0;
+     function myBtn(R){
 		if(cnum<=1){
 			cnum=2;
 			last=R;
@@ -446,10 +483,72 @@ a.checkbox-deselect {
 		}else{
 		 cnum=1;
 		}
-		
+		if(last.includes("B")||last.includes("C")||R.includes("C")){return;}
+		if(yx==true){
+			if(last=="R1"){
+			  R1+=parseFloat(document.getElementById(R).innerHTML);
+			}
+			if(last=="R2"){
+			  R2+=parseFloat(document.getElementById(R).innerHTML);		 
+			}
+			if(last=="R3"){
+			  R3+=parseFloat(document.getElementById(R).innerHTML); 
+			}
+			if(last=="R4"){
+			  R4+=parseFloat(document.getElementById(R).innerHTML);
+			}
+			if(last=="R5"){
+			  R5+=parseFloat(document.getElementById(R).innerHTML);
+			}
+			if(last=="R6"){
+			  R6+=parseFloat(document.getElementById(R).innerHTML);
+			}
+		}
         document.getElementById(last).innerHTML = parseFloat(document.getElementById(last).innerHTML)+parseFloat(document.getElementById(R).innerHTML);
     }
-	
+	function myBtn15(){
+	    document.getElementById('R1').innerHTML =0;
+		document.getElementById('R2').innerHTML =0;
+		document.getElementById('R3').innerHTML =0;
+		document.getElementById('R4').innerHTML =0;
+		document.getElementById('R5').innerHTML =0;
+		document.getElementById('R6').innerHTML =0;
+		document.getElementById('C1').innerHTML ="✶";
+		document.getElementById('C2').innerHTML ="✶";
+		document.getElementById('C3').innerHTML ="✶";
+		document.getElementById('C4').innerHTML ="✶";
+		document.getElementById('C5').innerHTML ="✶";
+		document.getElementById('C6').innerHTML ="✶";
+    }
+	function myBtn1(){
+	 if(yx==true){
+	    yx=false;
+	 }else if(yx==false){
+	   yx=true;
+	  }
+	  alert("记忆："+yx);
+    }
+	function myBtn7(){
+		document.getElementById("R1").innerHTML =R1;
+		document.getElementById("R2").innerHTML =R2;
+		document.getElementById("R3").innerHTML =R3;
+		document.getElementById("R4").innerHTML =R4;
+		document.getElementById("R5").innerHTML =R5;
+		document.getElementById("R6").innerHTML =R6;
+	}
+	function myBtn2(){
+		cnum=1;
+		if(last.includes("B")||last.includes("R")){return;}
+        document.getElementById(last).innerHTML = document.getElementById(last).innerHTML+"✶";
+	}
+	function myBtn3(){
+		document.getElementById('C1').innerHTML ="✶";
+		document.getElementById('C2').innerHTML ="✶";
+		document.getElementById('C3').innerHTML ="✶";
+		document.getElementById('C4').innerHTML ="✶";
+		document.getElementById('C5').innerHTML ="✶";
+		document.getElementById('C6').innerHTML ="✶";
+    }
 </script>
 
 
